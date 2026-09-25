@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import AboutExperience from '../components/AboutExperience.astro';
+import Gallery from '../components/Gallery.astro';
+import InstagramFeed from '../components/InstagramFeed.astro';
+import Reviews from '../components/Reviews.astro';
+import LocationContact from '../components/LocationContact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="DownTown Café and Restaurant | داون تاون كافيه ومطعم البصرة"
+  description="الـمطعم الأكبر في البصرة - عندما يتحدث الذوق الرفيع. Downtown Cafe & Restaurant offers luxury dining, exquisite breakfast, Iraqi authentic delicacies, and unforgettable ambiance in Al-Jaza'ir, Basra."
+>
+  <div class="min-h-screen flex flex-col selection:bg-downtown-gold selection:text-black">
+    <Navbar />
+    
+    <main class="flex-grow">
+      <Hero />
+      <AboutExperience />
+      <Gallery />
+      <InstagramFeed />
+      <Reviews />
+      <LocationContact />
+    </main>
+
+    <Footer />
+  </div>
+</Layout>

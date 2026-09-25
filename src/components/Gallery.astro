@@ -1,0 +1,83 @@
+---
+const photos = [
+  {
+    src: "https://lh3.googleusercontent.com/grass-cs/ACvplmPe8STu3wMT4bxcDE1c8mHz26VHmZgI6ep-Uz3QPLdB0DHKU7pn4bX9481u-ays9o6N3FkltSJgV8Ge3saR0dkv_pDNIuLYbqmhox27PQixootTCtsbgau9rWJTcGMhSDm-Goag=w600-h450-p-k-no",
+    alt: "DownTown Restaurant Grand Hall & Seating",
+    tag: "الصالة الرئيسية",
+    span: "col-span-1 md:col-span-2 row-span-2"
+  },
+  {
+    src: "https://lh3.googleusercontent.com/grass-cs/ACvplmPI9W4cpo-urNRIkJ5lwvmkPQGntDUvvXke9efE5VcfWKsmQPn_a7ux6KYqq7nb-ySSv2xfn7dpM5QJZL9Zitkd-ilEcs7QnvobH9X4LWcZi53CVJHzFwdfC3MHvvNUWaA6B2D-=w300-h225-p-k-no",
+    alt: "DownTown Dining Area",
+    tag: "جلسات مريحة",
+    span: "col-span-1"
+  },
+  {
+    src: "https://lh3.googleusercontent.com/grass-cs/ACvplmMjItNnLt-yGgQwoGlf-p99ZXq3om_J0jVwpsHKCHm544YbKorMd6zam6MscDwdMz7d992WrbykGYJp4zGaK8zgulziu4a0BxcuIWccnmyLw8SAt_ZB1qJiMxTIQoQbQs7W3Fe6=w300-h225-p-k-no",
+    alt: "DownTown Interior Detail",
+    tag: "ديكورات عصرية",
+    span: "col-span-1"
+  },
+  {
+    src: "https://lh3.googleusercontent.com/grass-cs/ACvplmOS3Av-Z3GprcEZ5DviVbV6fBEP68ftXVMP47WH89PVOrkZQFp751DQF-2GHAc7TxotLkNz7T4adg0GXfJYkEkrWF00XEhQSjD2OlulxUhiyB1dqtmf89-aLwvG3DNdWcsRxvW65A=w300-h450-p-k-no",
+    alt: "DownTown Architecture",
+    tag: "أناقة المكان",
+    span: "col-span-1 md:col-span-1 row-span-2"
+  },
+  {
+    src: "https://lh3.googleusercontent.com/grass-cs/ACvplmM_Oh0FaXtdmb0BI0rNQhNxyKICRdgxlP33gpje1HWjCeo5iIaHlSzjif-sb4DQGJzAfAnieza5aBeEttcvYAVqIdvBTTo1Kmb4ZhuwhzlDxNxM226XICOq5u2Tmfl560Un4kQfOA=w300-h225-p-k-no",
+    alt: "DownTown Cafe Mood",
+    tag: "إضاءة دافئة",
+    span: "col-span-1"
+  },
+  {
+    src: "https://lh3.googleusercontent.com/grass-cs/ACvplmPIOT-P3vb_w6MJ1yRvS1dZuw_NGHKv-s2_CHD_ggwlNdGBvL5LvrrUTwB2wX42VHhQOtBYVboD5w4jiKJQsYiWQab2Cv5Drp2LiAIS0nizwPNqRAMSWj35-y13GIy9PZUNSSfL=w300-h225-p-k-no",
+    alt: "DownTown Hospitality",
+    tag: "خدمة راقية",
+    span: "col-span-1"
+  }
+];
+---
+
+<section id="gallery" class="py-24 relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+      <div class="text-right">
+        <span class="text-xs font-bold text-downtown-gold uppercase tracking-widest font-serif block mb-2">Visual Tour</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">معرض أجواء داون تاون</h2>
+        <p class="text-slate-400 text-sm mt-2">صور حصرية من داخل الصالة والمطعم الأكبر في البصرة</p>
+      </div>
+
+      <div class="inline-flex items-center gap-2 self-start md:self-auto px-4 py-2 rounded-full bg-downtown-card border border-downtown-border text-xs text-slate-300">
+        <span class="w-2 h-2 rounded-full bg-downtown-gold"></span>
+        موثق عبر Google Maps & Guests
+      </div>
+    </div>
+
+    <!-- Bento Gallery Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[220px]">
+      {photos.map((item) => (
+        <div class={`relative group overflow-hidden rounded-3xl border border-downtown-border/80 bg-downtown-card ${item.span}`}>
+          <img 
+            src={item.src} 
+            alt={item.alt}
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+          
+          <div class="absolute bottom-4 right-4 left-4 flex items-center justify-between pointer-events-none">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-black/60 backdrop-blur-md text-downtown-gold border border-white/10">
+              {item.tag}
+            </span>
+            <span class="text-white/80 text-xs font-serif opacity-0 group-hover:opacity-100 transition-opacity">
+              DownTown
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

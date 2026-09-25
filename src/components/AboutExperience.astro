@@ -1,0 +1,59 @@
+---
+const highlights = [
+  {
+    title: "سيت منيو الفطور الفاخر",
+    desc: "بداية يوم مثالية بنكهات مختارة بعناية، من الإفطار العراقي الأصيل إلى التشكيلات العالمية الحديثة.",
+    icon: "☕",
+  },
+  {
+    title: "أجواء وتصاميم فندقية استثنائية",
+    desc: "ديكورات عصرية وتفاصيل معمارية خاصة تمنح جلساتكم راحة وفخامة لا تضاهى في البصرة.",
+    icon: "🏛️",
+  },
+  {
+    title: "دولمة ومأكولات شرقية مميزة",
+    desc: "أصالة المطبخ العراقي العريق بلمسة داون تاون الفاخرة، طعم وريحة تفتح النفس من اللقمة الأولى.",
+    icon: "🍲",
+  },
+  {
+    title: "شاشات عملاقة وتغطية كروية",
+    desc: "عيشوا حماس بطولات خليجي ومباريات أسود الرافدين والدوريات العالمية بأعلى دقة وأقوى تشجيع.",
+    icon: "⚽",
+  }
+];
+---
+
+<section id="about" class="py-20 relative bg-downtown-surface/40 border-y border-downtown-border">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+      <h2 class="text-xs sm:text-sm font-bold text-downtown-gold uppercase tracking-widest font-serif">
+        The DownTown Philosophy
+      </h2>
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-white">
+        الزبون ضيفنا، وراحته وتقديره أولويتنا
+      </h3>
+      <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+        من الاستقبال، للتقديم، للطعم والخدمة… كل تفصيل في داون تاون محسوب بعناية لنصنع تجربة تليق بأهل البصرة وضيوفها الكرام.
+      </p>
+    </div>
+
+    <!-- Highlights Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {highlights.map((item) => (
+        <div class="relative bg-downtown-card/80 border border-downtown-border p-7 rounded-3xl hover:border-downtown-gold/40 transition-all duration-300 hover:-translate-y-1.5 shadow-xl group">
+          <div class="text-4xl mb-4 p-3 w-fit rounded-2xl bg-downtown-dark/70 border border-white/5 group-hover:scale-110 transition-transform">
+            {item.icon}
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2 group-hover:text-downtown-gold-light transition-colors">
+            {item.title}
+          </h4>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            {item.desc}
+          </p>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

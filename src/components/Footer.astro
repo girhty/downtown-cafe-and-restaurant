@@ -1,0 +1,63 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-black border-t border-downtown-border pt-16 pb-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/5">
+      
+      <!-- Brand statement -->
+      <div class="md:col-span-5 space-y-4 text-right">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full border border-downtown-gold/40 flex items-center justify-center font-serif text-downtown-gold font-bold">
+            DT
+          </div>
+          <span class="text-xl font-bold font-serif text-white">DownTown Café</span>
+        </div>
+        <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+          داون تاون كافيه ومطعم - المطعم الأكبر في البصرة. عنوان الذوق الرفيع، وأجمل الجلسات العائلية مع ألذ النكهات والخدمة المتميزة.
+        </p>
+      </div>
+
+      <!-- Navigation links -->
+      <div class="md:col-span-3 space-y-3 text-right">
+        <h4 class="text-sm font-bold text-downtown-gold font-serif uppercase tracking-wider">روابط سريعة</h4>
+        <ul class="space-y-2 text-xs text-slate-400">
+          <li><a href="#home" class="hover:text-white transition-colors">الرئيسية</a></li>
+          <li><a href="#about" class="hover:text-white transition-colors">عن داون تاون</a></li>
+          <li><a href="#gallery" class="hover:text-white transition-colors">المعرض والتصاميم</a></li>
+          <li><a href="#instagram" class="hover:text-white transition-colors">منشوراتنا على انستغرام</a></li>
+          <li><a href="#reviews" class="hover:text-white transition-colors">آراء الزوار والضيوف</a></li>
+          <li><a href="#location" class="hover:text-white transition-colors">الموقع والحجز</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact details -->
+      <div class="md:col-span-4 space-y-3 text-right">
+        <h4 class="text-sm font-bold text-downtown-gold font-serif uppercase tracking-wider">التواصل المباشر</h4>
+        <p class="text-xs text-slate-400">البصرة - الجزائر مقابل محطة وقود الجزائر</p>
+        <p class="text-xs text-slate-400">هاتف: 07745002020 / 07845002020</p>
+        <div class="pt-2">
+          <a 
+            href="https://www.instagram.com/down.town.basra" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-downtown-card border border-white/10 text-xs font-semibold text-slate-200 hover:text-white hover:border-downtown-gold transition-colors"
+          >
+            <span>انستغرام داون تاون (1M+ متابع)</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom sub-footer -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <p>© {currentYear} DownTown Café & Restaurant. All rights reserved.</p>
+      <p>عندما يتحدث الذوق الرفيع • البصرة الفيحاء</p>
+    </div>
+
+  </div>
+</footer>

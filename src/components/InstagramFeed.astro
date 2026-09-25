@@ -1,0 +1,128 @@
+---
+interface Post {
+  caption: string;
+  image_url: string;
+  likes: number;
+}
+
+const posts: Post[] = [
+  {
+    caption: "فطورك بدايته من داون تاون ☀️ سيت منيو متنوع يجمع لك خيارات مختلفة من الفطور، بطعم يليق ببداية يومك وأجواء داون تاون.",
+    image_url: "https://scontent.cdninstagram.com/v/t51.82787-15/818971824_18392168602162189_7368531798494374680_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=l4NF5C1Mg1EQ7kNvwFybKkj&_nc_oc=AdqUZqDZ3FCkKT8myJLlrrI9mMJdaLGeJ6HqPo7f4jMYQYBuHWFQW1INoFsRzzQPxRw&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=lsYR-cgLn3a-G8KPfh4HNA&_nc_ss=7ea8c&oh=00_AQLK2N9ZCZCrcEFA59ZrgeIORr-gNNatcxyeMULHT1l-yQ&oe=6ABC6641",
+    likes: 0
+  },
+  {
+    caption: "بداية خليجي 27 وحماس العراق وعُمان غير بداون تاون 🇮🇶⚽️ عيشوا أجواء المباراة ويانه وشجعوا أسود الرافدين بكل حماس.",
+    image_url: "https://scontent.cdninstagram.com/v/t51.82787-15/821478536_18391910635162189_5400439583615159869_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=3_-BzOZiulsQ7kNvwFmuvMY&_nc_oc=AdrXmDdo8Ne2-SFnkQy-LfNaEJhEHmU7bAu2bwulmeBc2VezPLvTkal3d07vjYdOSe4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=lsYR-cgLn3a-G8KPfh4HNA&_nc_ss=7ea8c&oh=00_AQJuBl8878apvxdcxNQt5tuopQjyg6vxDKBgluEYcULRQA&oe=6ABC769B",
+    likes: 0
+  },
+  {
+    caption: "مواجهة منتظرة بين العراق وعُمان 🔥🇮🇶🇴🇲 90 دقيقة من الحماس والتحدي وكلنا أمل بأسود الرافدين 💪🏻 #دوري_نجوم_العراق",
+    image_url: "https://scontent.cdninstagram.com/v/t51.82787-15/818535116_18391523779162189_784540790771203160_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D5byiLvovY4Q7kNvwFtkbL2&_nc_oc=AdqzgQqYM13kCJ-knzRylM7i9z86whgVO2o6przjIGn9L_EWOrHl5laVtILyoVncp7U&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=lsYR-cgLn3a-G8KPfh4HNA&_nc_ss=7ea8c&oh=00_AQK5OxjfuTLSwGO7jbgUBLiirAtzGNaoqR2IyODNz2grRA&oe=6ABC5A0D",
+    likes: 0
+  },
+  {
+    caption: "بداون تاون، ما يهمنا منو الزبون… يهمنا شلون نخليه يحس بالتقدير. من الاستقبال، للتقديم، للطعم والخدمة… كل تفصيل محسوب حتى نصنع تجربة تليق بيه.",
+    image_url: "https://scontent.cdninstagram.com/v/t51.82787-15/811864812_18390876010162189_6479047945605443108_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ll-xR0KcU2kQ7kNvwHGPnEo&_nc_oc=Adq0WpL8gtRQEOuVeFrJjPNR9xIFW9aklF-gFzXickoqX3rdPzGG_uNxovExYMWZfr8&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=lsYR-cgLn3a-G8KPfh4HNA&_nc_ss=7ea8c&oh=00_AQIazbMN0ST1J_ht8ChfpOZrUoi2z4HVQm1VKHiopAfAaQ&oe=6ABC47A6",
+    likes: 0
+  },
+  {
+    caption: "دولمة داون تاون… طعم عراقي أصيل، بس بلمسة داون تاون. سفرة تجمع النكهة، والريحة اللي تفتح النفس من أول لقمة 😋",
+    image_url: "https://scontent.cdninstagram.com/v/t51.82787-15/808847351_18390578854162189_5168877193703995967_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=iaMbVKyhyeIQ7kNvwHot96k&_nc_oc=Adp3ijdwC6v7ib9wj-bnpYdaZRzlevRqMhxLt0_z59XBJUhreK59dMf3wi4U71EMsoU&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=lsYR-cgLn3a-G8KPfh4HNA&_nc_ss=7ea8c&oh=00_AQJVLlB0HpTOy5-n0MIJvvVFRFYiOnQeF5_-lJqzNrADGg&oe=6ABC63D1",
+    likes: 0
+  }
+];
+---
+
+<section id="instagram" class="py-24 bg-downtown-dark relative overflow-hidden">
+  <!-- Decorative badge / background element -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Profile Card Header -->
+    <div class="p-8 md:p-10 rounded-3xl bg-gradient-to-r from-downtown-card via-downtown-surface to-downtown-card border border-downtown-gold/30 shadow-2xl mb-12">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-5 text-right">
+          <div class="relative">
+            <div class="w-20 h-20 rounded-full p-1 bg-gradient-to-tr from-amber-400 via-rose-500 to-purple-600 shadow-xl">
+              <div class="w-full h-full rounded-full bg-downtown-dark flex items-center justify-center font-serif font-black text-2xl text-downtown-gold">
+                DT
+              </div>
+            </div>
+            <div class="absolute -bottom-1 -right-1 bg-blue-500 text-white rounded-full p-1" title="Verified Presence">
+              <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 class="text-2xl font-bold text-white">داون تاون / Down Town</h3>
+            </div>
+            <p class="text-downtown-gold text-sm font-semibold mt-0.5">@down.town.basra</p>
+            <p class="text-xs text-slate-300 mt-1 max-w-md line-clamp-2">
+              عندما يتحدث الذوق الرفيع • الـمطعم الأكبر في البصرة • الجزائر مقابل محطة وقود الجزائر
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="text-center px-4 py-2 rounded-2xl bg-black/40 border border-white/5">
+            <span class="block text-2xl font-black text-white font-serif">1,018,246</span>
+            <span class="text-xs text-slate-400">متابع حقيقي</span>
+          </div>
+
+          <a 
+            href="https://www.instagram.com/down.town.basra" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="px-6 py-3 rounded-full bg-gradient-to-r from-rose-600 to-amber-600 hover:from-rose-500 hover:to-amber-500 text-white font-bold text-sm shadow-lg shadow-rose-900/30 transition-all duration-300 flex items-center gap-2"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+            <span>متابعة على انستغرام</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Instagram Posts Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+      {posts.map((post, idx) => (
+        <a 
+          href="https://www.instagram.com/down.town.basra" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="group relative bg-downtown-card rounded-2xl overflow-hidden border border-downtown-border hover:border-downtown-gold/60 transition-all duration-300 flex flex-col hover:-translate-y-1.5 shadow-lg"
+        >
+          <!-- Post Media Box -->
+          <div class="relative aspect-square w-full bg-slate-900 overflow-hidden">
+            <img 
+              src={post.image_url} 
+              alt={`DownTown Instagram Post ${idx + 1}`}
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="px-3.5 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-semibold flex items-center gap-1.5">
+                <svg class="w-4 h-4 fill-red-500" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                عرض المنشور
+              </span>
+            </div>
+          </div>
+
+          <!-- Caption preview -->
+          <div class="p-4 text-right flex-1 flex flex-col justify-between bg-downtown-card">
+            <p class="text-xs text-slate-300 leading-relaxed line-clamp-3 mb-3">
+              {post.caption}
+            </p>
+            <div class="flex items-center justify-between text-[11px] text-downtown-gold-light border-t border-white/5 pt-2">
+              <span>DownTown Basra</span>
+              <span class="text-slate-400">#البصرة</span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+  </div>
+</section>

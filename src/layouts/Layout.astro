@@ -1,0 +1,56 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "DownTown Café & Restaurant | داون تاون البصرة",
+  description = "الـمطعم الأكبر في البصرة - عندما يتحدث الذوق الرفيع. Downtown Cafe & Restaurant offers luxury dining, exquisite breakfast, Iraqi authentic delicacies, and unforgettable ambiance in Al-Jaza'ir, Basra." 
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="ar" dir="rtl" class="scroll-smooth bg-downtown-dark text-slate-100 selection:bg-downtown-gold selection:text-black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:locale" content="ar_IQ" />
+    <meta name="theme-color" content="#0d0d0f" />
+    <title>{title}</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="overflow-x-hidden font-arabic antialiased bg-downtown-dark selection:bg-downtown-gold selection:text-slate-950">
+    <slot />
+
+    <!-- Ambient Subtle Noise & Glow effect -->
+    <div class="fixed inset-0 pointer-events-none z-50 opacity-20 bg-[radial-gradient(#dfa65b_1px,transparent_1px)] [background-size:24px_24px]"></div>
+  </body>
+</html>
+
+<style is:global>
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0d0d0f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a35;
+    border-radius: 9999px;
+    border: 2px solid #0d0d0f;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dfa65b;
+  }
+</style>

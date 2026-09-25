@@ -1,0 +1,131 @@
+---
+const followersCount = "1M+";
+const rating = "4.0";
+const reviewsCount = "356";
+---
+
+<section id="home" class="relative min-h-[92vh] pt-28 flex items-center justify-center overflow-hidden">
+  <!-- Glowing ambient lights -->
+  <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-downtown-gold/15 rounded-full blur-[140px] pointer-events-none"></div>
+  <div class="absolute bottom-10 right-10 w-96 h-96 bg-amber-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-12 gap-12 items-center">
+    
+    <!-- Text Content -->
+    <div class="lg:col-span-7 space-y-8 text-right">
+      
+      <!-- Badges row -->
+      <div class="flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-downtown-card/90 border border-downtown-gold/30 text-xs font-semibold text-downtown-gold-light tracking-wide shadow-inner">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          الـمطعم الأكبر والأفخم في البصرة
+        </span>
+
+        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-700/60 text-xs text-slate-300">
+          <span class="text-amber-400">★</span> {rating} على Google ({reviewsCount} تقييم)
+        </span>
+      </div>
+
+      <!-- Main Heading -->
+      <div class="space-y-3">
+        <p class="text-downtown-gold font-serif text-lg md:text-xl font-medium tracking-wide">
+          عندما يتحدث الذوق الرفيع
+        </p>
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.15]">
+          داون تاون <br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-downtown-gold via-downtown-gold-light to-amber-200 font-serif">
+            DownTown Café
+          </span>
+        </h1>
+      </div>
+
+      <!-- Descriptive copy -->
+      <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+        وجهتك الاستثنائية في قلب البصرة (الجزائر). سيت منيو فطور فاخر، أطباق شرقية وعالمية معدة بحرفية تليق بضيوفنا، وديكور راقٍ يوفر لك ولعائلتك تجربة طعام لا تُنسى.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a 
+          href="#gallery" 
+          class="px-8 py-3.5 rounded-full bg-gradient-to-r from-downtown-gold to-amber-500 hover:from-downtown-gold-light hover:to-amber-400 text-slate-950 font-bold shadow-lg shadow-downtown-gold/20 hover:scale-[1.02] active:scale-95 transition-all duration-200 text-base flex items-center gap-2"
+        >
+          <span>استكشف المأكولات والديكور</span>
+          <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+
+        <a 
+          href="#location" 
+          class="px-7 py-3.5 rounded-full bg-downtown-surface/90 hover:bg-downtown-card border border-downtown-border hover:border-downtown-gold/50 text-white font-semibold transition-all duration-200 text-base"
+        >
+          العنوان ومواعيد العمل
+        </a>
+      </div>
+
+      <!-- Micro Metrics -->
+      <div class="grid grid-cols-3 gap-6 pt-6 border-t border-downtown-border/70 max-w-lg">
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white font-serif">{followersCount}</div>
+          <div class="text-xs text-slate-400 mt-1">متابع على إنستغرام</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-downtown-gold font-serif">4.0 / 5</div>
+          <div class="text-xs text-slate-400 mt-1">تقييم رضا الزبائن</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white font-serif">100%</div>
+          <div class="text-xs text-slate-400 mt-1">أجواء وخدمة ملكية</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Visual Showcase / Hero Card -->
+    <div class="lg:col-span-5 relative">
+      <div class="relative mx-auto max-w-md lg:max-w-none">
+        
+        <!-- Main Framed Image -->
+        <div class="relative rounded-3xl overflow-hidden border border-downtown-gold/30 shadow-2xl shadow-black/80 bg-downtown-card group">
+          <img 
+            src="https://lh3.googleusercontent.com/grass-cs/ACvplmPe8STu3wMT4bxcDE1c8mHz26VHmZgI6ep-Uz3QPLdB0DHKU7pn4bX9481u-ays9o6N3FkltSJgV8Ge3saR0dkv_pDNIuLYbqmhox27PQixootTCtsbgau9rWJTcGMhSDm-Goag=w600-h450-p-k-no" 
+            alt="DownTown Cafe and Restaurant Interior Basra" 
+            class="w-full h-[460px] object-cover transition-transform duration-700 group-hover:scale-105"
+            loading="eager"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-downtown-dark via-transparent to-black/20"></div>
+
+          <!-- Bottom Floating Caption inside Image -->
+          <div class="absolute bottom-5 inset-x-5 p-4 rounded-2xl bg-downtown-dark/80 backdrop-blur-md border border-white/10 text-right">
+            <span class="inline-block text-xs uppercase text-downtown-gold font-bold tracking-wider mb-1">DownTown Basra Atmosphere</span>
+            <p class="text-sm font-medium text-white">تصميم داخلي فاخر ومميز يمنحك تجربة استرخاء وضيافة راقية</p>
+          </div>
+        </div>
+
+        <!-- Floating Badge: Open Now -->
+        <div class="absolute -top-4 -right-4 bg-downtown-card/95 border border-emerald-500/40 px-4 py-2 rounded-2xl shadow-xl backdrop-blur-md flex items-center gap-3">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+          </span>
+          <div class="text-xs">
+            <span class="block font-bold text-emerald-400">مفتوح الآن للزوار</span>
+            <span class="block text-[11px] text-slate-400">نستقبلكم طوال اليوم</span>
+          </div>
+        </div>
+
+        <!-- Floating Badge: Instagram Verified vibe -->
+        <div class="absolute -bottom-5 -left-4 bg-downtown-surface/95 border border-downtown-gold/40 p-3.5 rounded-2xl shadow-xl backdrop-blur-md flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-500 via-rose-500 to-purple-600 flex items-center justify-center text-white">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/></svg>
+          </div>
+          <div class="text-right">
+            <span class="block text-xs font-bold text-white">@down.town.basra</span>
+            <span class="block text-[11px] text-downtown-gold">أكثر من مليون متابع</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
